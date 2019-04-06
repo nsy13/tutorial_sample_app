@@ -4,6 +4,23 @@ export interface RecordOpts {
     Command: Config.Command.Class;
     argv: string[];
 }
+export interface AnalyticsInterface {
+    source: string;
+    event: string;
+    properties: {
+        cli: string;
+        command: string;
+        completion: number;
+        version: string;
+        plugin: string;
+        plugin_version: string;
+        os: string;
+        shell: string;
+        valid: boolean;
+        language: string;
+        install_id: string;
+    };
+}
 export default class AnalyticsCommand {
     config: Config.IConfig;
     userConfig: typeof deps.UserConfig.prototype;

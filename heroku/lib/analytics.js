@@ -26,6 +26,7 @@ class AnalyticsCommand {
             source: 'cli',
             event: opts.Command.id,
             properties: {
+                cli: this.config.name,
                 command: opts.Command.id,
                 completion: await this._acAnalytics(opts.Command.id),
                 version: this.config.version,
