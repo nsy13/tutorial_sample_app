@@ -78,9 +78,9 @@ p {
   text-decoration: none;
 }
 
-img {
-  display: none;
-}
+// img {
+//   display: none;
+// }
 
 /* footer */
 
@@ -200,4 +200,16 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }

@@ -26,7 +26,7 @@ export default class AnalyticsCommand {
     userConfig: typeof deps.UserConfig.prototype;
     http: typeof deps.HTTP;
     constructor(config: Config.IConfig);
-    record(opts: RecordOpts): Promise<import("http-call").HTTP<{}> | undefined>;
+    record(opts: RecordOpts): Promise<any>;
     readonly url: string;
     readonly authorizationToken: string | undefined;
     readonly netrcToken: string | undefined;
